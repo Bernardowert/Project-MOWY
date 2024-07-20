@@ -1,0 +1,49 @@
+.btn{
+    display: inline-block;
+    line-height: 5.3rem;
+    padding: 0 3.2rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    border: 1px solid transparent;
+    border-radius: 4.8rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &-primary{
+        &::before{
+              width: 100%;
+              transform-origin: right;
+              right: 0;
+        }
+        &:is(:hover,:focus){
+            border-color: #fff;
+            &::before{
+                width: 0;
+            }
+        }
+    }
+    &-outline{
+        border-color: #fff;
+        &::before{
+            width: 0;
+            left: 0;
+        }
+        &:is(:hover,:focus){
+            border-color: var(--Purple-01);
+             &::before{
+                 width: 100%;
+             }
+        }
+    }
+
+    &::before{
+        content: "";
+        top: 0;
+        transition: width .3s;
+        height: 100%;
+        position: absolute;
+        background-color: var(--Purple-01);
+        z-index: -1;
+    }
+}

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: Antialiased;
+    font-family: "Inter", sans-serif;
+    border: 0;
+    color: #fff;
+    outline-color: green;
+}
+
+body{
+    background-color: #030303;
+}
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+   list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
